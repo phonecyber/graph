@@ -183,7 +183,7 @@ public:
 					break;
 				}
 			}
-			if (!status)
+			if (status)
 				break;
 		}
 		return status;
