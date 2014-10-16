@@ -172,14 +172,14 @@ public:
 	}
 	bool isDigraph()
 	{
-		status = true; // reset defalut 'status' to TURE
+		status = false; // reset defalut 'status' to FALSE
 		for (int i = 0; i < numNode; i++)
 		{
 			for (int j = 0; j < numNode; j++)
 			{
 				if (matrix[i][j] != matrix[j][i])
 				{
-					status = false;
+					status = true;
 					break;
 				}
 			}
